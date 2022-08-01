@@ -9,15 +9,18 @@ app.use(express.json());
 let students = ["bob", "samantha", "lily", "grace", "jim"];
 
 app.get("/", (req, res) => {
-  let output = "<html><body>";
+  let output = "<html><body><ul>";
 
-  output = output + "hello there html";
+//   output = output + "hello there html";
+for(let i = 0; i < students.length; i++) {
+    output = output + "<li><input type="checkbox">"+ students[i] + "</li>"
 
-  let output = "</body></html>";
+  output = "</ul></body></html>";
 
   res.send(output);
-});
+}
 
 app.listen(port, () => {
   console.log("I was needed");
-});
+})
+
