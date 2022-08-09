@@ -1,0 +1,47 @@
+main {
+  background-color: blue;
+  border-style: solid;
+  border-width: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+main > section {
+  border-style: solid;
+  background-color: red;
+}
+#redpart {
+  color: red;
+}
+
+#fancyfont {
+  font-family: cursive;
+}
+
+#toTheRight {
+  display: flex;
+  justify-content: end;
+}
+
+#blueBox {
+  display: flex;
+  border-radius: 10px;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aqua;
+  border-style: solid;
+  border-width: 5px;
+}
+
+body > section > button {
+  margin: 10px;
+}
